@@ -4,7 +4,7 @@
 * x500: nashx282, oneil569
 */
 
-The purpose of this program is to implement a map-reduce algorithm to mimic a lettercount of words within a given directory that contains only subfolders and .txt files that have one word per line. The program implements this using a sockets and a client server model. The client program will take in the directory, number of mapper processes, server IP and sercer port and the server program will specify the server port number. The client produces a log file with with various statements indicating the functionality of the program including the final counts of the beginning letter of each word.
+The purpose of this program is to implement a map-reduce algorithm to mimic a lettercount of words within a given directory that contains only subfolders and .txt files that have one word per line. The program implements this using a sockets and a client server model. The client program will take in the directory, number of mapper processes, server IP and sercer port and the server program will specify the server port number and spawn threads for every client connection. The client produces a log file with with various statements indicating the functionality of the program including the final counts of the beginning letter of each word.
 
 The each program is compiled by running "make" in the directory where "src" and "include" are visible (like what was given to us as a template). "make" will generate an executable called "client" and "server" for the client and server programs respectively. Ensure "commands.txt" is located in the same directory as the executable.
 
